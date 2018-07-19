@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="2.5" method="upgrade" group="system">
+	<name>Run</name>
+	<creationDate>2016-04-13</creationDate>
+	<version>1.0.0</version>
+	<author>GlebM</author>
+	<authorEmail>maksimovich.gleb@gmail.com</authorEmail>
+	<description>Run a script</description>
+	<scriptfile>script.php</scriptfile>
+	<files>
+		<filename plugin="run">run.php</filename>
+	</files>
+</extension>
