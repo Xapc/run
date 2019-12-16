@@ -28,7 +28,7 @@ class plgSystemRunInstallerScript
 		$this->_customScript();
 		$this->_uninstallItself();
 	}
-	
+
 	function _uninstallItself(){
 		// Remove plugin from database
 		$db = JFactory::getDbo();
@@ -50,6 +50,5 @@ class plgSystemRunInstallerScript
 	}
 
 	function _customScript(){
-    
 	}
 }

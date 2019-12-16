@@ -1,10 +1,12 @@
 Run!
 ---
 
-Run is self destruction plugin for Joomla 2.5 and newer. If you have question "how it's work?" I say you just.
-This plugin deleting after his installing. You may be say "why?". And I say - for do it something, for example,
-copy file to needly directory and start the test with save log. After those operations this plugin will have deleted 
-without anything footprint in Joomla system.
+Run is plugin for Joomla 2.5 and newer. This plugin make self delete after install.
 
-When we are install plugin in Joomla system was calling method `postflight` which execute user method in `_customScript`
-and then `_uninstallItself`
+How does it work? There are easy steps:
+
+* You add your "Joomla code" in `_customScript()` method
+* Then you install this plugin
+* Joomla plugin installer call `postflight()` method. `postflight()` contain two methods `_customScript()` and `_uninstallItself()`
+* `_customScript()` execute user's code
+* `_uninstallItself()` finding itself and delete all things that belong with this plugin
